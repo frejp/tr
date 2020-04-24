@@ -29,7 +29,7 @@ useTypedSelector()
 
 On the other hand I had some problems testing it (which i solved)
 
-#Testing with jest and testing library
+# Testing with jest and testing library
 
 The philsophy of testing-library is, test as like ur the user, not the internal logic of things.
 That's sounds reasonable.

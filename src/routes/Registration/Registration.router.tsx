@@ -22,7 +22,7 @@ const routeToStep = {
 const routerPaths = [
   { text: 'user', routerPath: '/registration/form' },
   { text: 'privacy', routerPath: '/registration/privacy' },
-  { text: 'done', routerPath: '/registration/done/' },
+  { text: 'done', routerPath: '/registration/done' },
 ];
 
 export const RegistrationRouter: React.FC = function App() {

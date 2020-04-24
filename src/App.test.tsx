@@ -2,7 +2,7 @@ import React from 'react';
 import { cleanup, fireEvent, render, screen, wait } from '@testing-library/react';
 import { createMemoryHistory } from 'history';
 import { MemoryRouter } from 'react-router-dom';
-
+import '@testing-library/jest-dom/extend-expect';
 import App from './App.router';
 import { renderWithProvider } from './test-utils';
 
@@ -44,10 +44,15 @@ test('Integration test, Happy path for the whole registration flow', async () =>
     fireEvent.click(getByText('SUBMIT'));
   });
   expect(getByLabelText('Receive updates about Tray.io product by email')).toBeVisible();
+  const privacyTab = screen.getByText('privacy', { selector: 'a' });
+  expect(privacyTab).toHaveStyle({ backgroundColor: 'grey' });
   await wait(async () => {
     fireEvent.click(getByText('SUBMIT'));
   });
   expect(
     getByText('Please verify your email address, you should have received an email from us already'),
   ).toBeVisible();
+  const doneTab = screen.getByText('done', { selector: 'a' });
+  expect(doneTab).toHaveStyle({ backgroundColor: 'grey' });
+
 });

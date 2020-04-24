@@ -18,4 +18,7 @@ export const NeutralLink = styled(Link)<FormErrorMessageProp>`
   }
   flex: ${(props) => props.flex};
   background-color: ${(props) => props.bgcolor};
+  flex: 1;
+  text-align: center;
+  border: 1px solid black;
 `;

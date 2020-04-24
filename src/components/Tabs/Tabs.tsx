@@ -11,12 +11,6 @@ export const TabWrapper = styled.div`
   margin-bottom: 10px;
 `;
 
-export const Tab = styled.div`
-  flex: 1;
-  text-align: center;
-  border: 1px solid black;
-`;
-
 interface RouterPath {
   text: string;
   routerPath: string;
@@ -33,7 +27,7 @@ export const Tabs: React.FC<Props> = ({ routerPaths }) => {
         const isCurrentPath = location.pathname.includes(path.routerPath);
         return (
           <NeutralLink key={i} bgcolor={isCurrentPath ? 'grey' : 'white'} color='black' flex='1' to={path.routerPath}>
-            <Tab>{path.text}</Tab>
+            {path.text}
           </NeutralLink>
         );
       })}

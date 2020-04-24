@@ -1,0 +1,98 @@
+{
+  "name": "tr",
+  "homepage": "https://frejp.github.io/tr",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.2.5",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.2",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/yup": "^0.26.33",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-lodash": "^3.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-compat": "^3.5.1",
+    "eslint-plugin-graphql": "^3.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-no-call": "^1.2.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-unicorn": "^16.1.1",
+    "formik": "^2.1.4",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.2",
+    "lodash": "^4.17.15",
+    "module": "^1.2.5",
+    "parse-link-header": "^1.0.1",
+    "prettier": "^1.19.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "styled-components": "^5.0.1",
+    "types-installer": "^1.6.3",
+    "typescript": "~3.7.2",
+    "yup": "^0.28.3"
+  },
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.0.1",
+    "@types/testing-library__jest-dom": "^5.0.1",
+    "@types/testing-library__react": "^9.1.2",
+    "@types/testing-library__user-event": "^4.1.1",
+    "@types/typescript": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
+    "@typescript-eslint/typescript-estree": "2.23.0"
+  }
+}
